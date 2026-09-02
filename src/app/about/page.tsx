@@ -1,13 +1,10 @@
-import Navbar from "@/components/navbar";
+import AboutTitle from "@/components/about-title";
 
 export default function About() {
   return (
     <>
-      <Navbar />
+      <AboutTitle />
 
-      <main>
-        <h1>About Us</h1>
-      </main>
     </>
   );
 }

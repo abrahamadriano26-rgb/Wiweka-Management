@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const HomeImg = () => {
   return (
-    <div className="w-full px-20">
+    <div className="w-full px-4 sm:px-6 md:px-8 lg:px-20">
       <Image
         src="/home.jpeg"
         alt="Wiweka Management"

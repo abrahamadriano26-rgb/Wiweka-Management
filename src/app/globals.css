@@ -3,6 +3,7 @@
 @theme {
   --color-slateblue: #2c44ca;
   --color-darkslateblue: #2d4aa2;
+
   --font-inter: "Inter", sans-serif;
   --font-sf-pro: -apple-system, BlinkMacSystemFont, "SF Pro", sans-serif;
 }
@@ -12,10 +13,10 @@
   --foreground: #171717;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #ffffff;
+    --foreground: #171717;
   }
 }
 
@@ -23,7 +24,7 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: "Inter", sans-serif;
-  @apply leading-[normal] m-0;
+  @apply leading-normal m-0;
 }
 
 @layer base {

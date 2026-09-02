@@ -1,123 +1,228 @@
 const HomeReview = () => {
+  const reviews = [
+    {
+      name: "Budi Santoso",
+      position: "Director, PT Maju Bersama",
+      review:
+        "Wiweka Management provides professional and responsive services. Their team has been incredibly helpful in managing our tax obligations and financial reporting. Highly recommended!",
+    },
+    {
+      name: "Dewi Lestari",
+      position: "Owner, Lestari Boutique",
+      review:
+        "As an SME owner, I truly appreciate the accounting services provided by Wiweka Management. Their team explains everything clearly, and the entire process is efficient and hassle-free.",
+    },
+    {
+      name: "Sari Wijaya",
+      position: "Entrepreneur",
+      review:
+        "The team at Wiweka Management is friendly, professional, and easy to communicate with. They helped us better understand our tax obligations while providing valuable advice for our business growth.",
+    },
+    {
+      name: "Jonathan Lim",
+      position: "Business Owner",
+      review:
+        "A trustworthy firm with an experienced team. We have complete peace of mind knowing that our accounting and tax matters are handled professionally.",
+    },
+  ];
+
   return (
-    <section className="w-full h-135.5 relative shadow-[inset_0_4px_4px_rgba(0,0,0,0.25)] bg-darkslateblue overflow-hidden text-left text-[16px] text-white font-inter">
+    <section
+      className="
+        w-full
+        bg-darkslateblue
+        shadow-[inset_0_0.25rem_0.25rem_rgba(0,0,0,0.25)]
+        overflow-hidden
+        text-white
+        font-inter
 
-      {/* Judul */}
-      <h2 className="h-14.5 w-100.75 absolute top-11.25 left-[calc(50%-201px)] text-[48px] font-medium text-center inline-block [text-shadow:0_4px_4px_rgba(0,0,0,0.25)] z-0">
-        Customer Review
-      </h2>
+        px-4
+        sm:px-6
+        md:px-12
+        lg:px-20
 
-      {/* Garis */}
-      <div className="h-px w-50 absolute top-40.25 left-[calc(50%-100px)] bg-white opacity-80 z-1" />
+        py-14
+        sm:py-16
+        md:py-18
+        lg:py-20
+      "
+    >
+      {/* ================= JUDUL ================= */}
+      <div className="w-full flex flex-col items-center">
+        <h2
+          className="
+            text-3xl
+            sm:text-4xl
+            md:text-11
+            lg:text-5xl
 
-      {/* Review Card 1 */}
-      <div className="absolute top-43 left-59 w-100 h-37.5 bg-white rounded-[15px] z-2">
+            font-medium
+            text-center
+            leading-[1.2]
 
-        <div className="absolute top-4 left-2.5 w-95 h-12.5 font-semibold text-slateblue">
-          Wiweka Management provides professional and responsive services.
-          Their team has been incredibly helpful in managing our tax
-          obligations and financial reporting. Highly recommended!
-        </div>
+            [text-shadow:0_0.25rem_0.25rem_rgba(0,0,0,0.25)]
+          "
+        >
+          Customer Review
+        </h2>
 
-        <b className="absolute top-4 -left-30.25 w-26 text-white">
-          Budi Santoso
-        </b>
+        {/* Garis */}
+        <div
+          className="
+            w-40
+            sm:w-48
+            md:w-50
 
-        <div className="absolute top-11.75 -left-32 w-29.5 font-medium text-white">
-          Director, PT Maju Bersama
-        </div>
+            h-px
 
-        {/* Rating */}
-        <div className="absolute top-30.75 left-2.5 flex items-center">
-          {[1, 2, 3, 4, 5].map((star) => (
-            <span key={star} className="text-yellow-400 text-[18px]">
-              ★
-            </span>
-          ))}
-        </div>
+            bg-white
+            opacity-80
+
+            mt-7
+            sm:mt-8
+            md:mt-9
+          "
+        />
       </div>
 
-      {/* Review Card 2 */}
-      <div className="absolute top-85.75 left-59 w-100 h-37.5 bg-white rounded-[15px] z-3">
+      {/* ================= REVIEWS ================= */}
+      <div
+        className="
+          w-full
+          max-w-300
+          mx-auto
 
-        <div className="absolute top-3.5 left-2.5 w-95 h-12.5 font-semibold text-slateblue">
-          As an SME owner, I truly appreciate the accounting services provided
-          by Wiweka Management. Their team explains everything clearly, and the
-          entire process is efficient and hassle-free.
-        </div>
+          mt-10
+          sm:mt-12
+          md:mt-14
 
-        <b className="absolute top-3.5 -left-30.25 w-24.25 text-white">
-          Dewi Lestari
-        </b>
+          grid
+          grid-cols-1
+          lg:grid-cols-2
 
-        <div className="absolute top-10 -left-32 w-29.5 font-medium text-white">
-          Owner, Lestari Boutique
-        </div>
+          gap-8
+          md:gap-10
+          lg:gap-x-16
+          lg:gap-y-12
+        "
+      >
+        {reviews.map((item) => (
+          <div
+            key={item.name}
+            className="
+              w-full
 
-        {/* Rating */}
-        <div className="absolute top-30.75 left-2.5 flex items-center">
-          {[1, 2, 3, 4, 5].map((star) => (
-            <span key={star} className="text-yellow-400 text-[18px]">
-              ★
-            </span>
-          ))}
-        </div>
+              flex
+              flex-col
+              sm:flex-row
+
+              items-stretch
+              sm:items-center
+
+              gap-4
+              sm:gap-6
+
+              mx-auto
+            "
+          >
+            {/* ================= NAMA ================= */}
+            <div
+              className="
+                w-full
+                sm:w-32
+                md:w-36
+                lg:w-32
+
+                shrink-0
+
+                text-center
+                sm:text-left
+              "
+            >
+              <b
+                className="
+                  block
+                  text-base
+                  md:text-4.25
+                  leading-[1.3]
+                "
+              >
+                {item.name}
+              </b>
+
+              <span
+                className="
+                  block
+                  mt-2
+
+                  text-sm
+                  md:text-3.75
+
+                  leading-[1.4]
+                  font-medium
+                "
+              >
+                {item.position}
+              </span>
+            </div>
+
+            {/* ================= CARD ================= */}
+            <div
+              className="
+                w-full
+
+                min-h-48
+                md:min-h-52
+
+                bg-white
+                rounded-3.75
+
+                shadow-[0_0.25rem_0.25rem_rgba(0,0,0,0.25)]
+
+                p-4
+                sm:p-5
+                md:p-6
+
+                flex
+                flex-col
+                justify-between
+              "
+            >
+              {/* Review */}
+              <p
+                className="
+                  text-sm
+                  sm:text-3.75
+                  md:text-base
+
+                  leading-normal
+
+                  font-semibold
+                  text-slateblue
+                "
+              >
+                {item.review}
+              </p>
+
+              {/* Rating */}
+              <div className="flex items-center mt-4">
+                {[1, 2, 3, 4, 5].map((star) => (
+                  <span
+                    key={star}
+                    className="
+                      text-yellow-400
+                      text-lg
+                      md:text-xl
+                    "
+                  >
+                    ★
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
-
-      {/* Review Card 3 */}
-      <div className="absolute top-43 left-230.5 w-100 h-37.5 bg-white rounded-[15px] z-4">
-
-        <div className="absolute top-4 left-4 w-95 h-12.5 font-semibold text-slateblue">
-          The team at Wiweka Management is friendly, professional, and easy to
-          communicate with. They helped us better understand our tax
-          obligations while providing valuable advice for our business growth.
-        </div>
-
-        <b className="absolute top-4 -left-27.5 w-22 text-white">
-          Sari Wijaya
-        </b>
-
-        <div className="absolute top-11.75 -left-30.5 w-29.5 font-medium text-white">
-          Entrepreneur
-        </div>
-
-        {/* Rating */}
-        <div className="absolute top-30.75 left-4 flex items-center">
-          {[1, 2, 3, 4, 5].map((star) => (
-            <span key={star} className="text-yellow-400 text-[18px]">
-              ★
-            </span>
-          ))}
-        </div>
-      </div>
-
-      {/* Review Card 4 */}
-      <div className="absolute top-86.5 left-230.5 w-100 h-37.5 bg-white rounded-[15px] z-5">
-
-        <div className="absolute top-3 left-4 w-95 h-12.5 font-semibold text-slateblue">
-          A trustworthy firm with an experienced team. We have complete peace
-          of mind knowing that our accounting and tax matters are handled
-          professionally.
-        </div>
-
-        <b className="absolute top-2 -left-27.5 w-26.5 text-white">
-          Jonathan Lim
-        </b>
-
-        <div className="absolute top-8.5 -left-30.5 w-29.5 font-medium text-white">
-          Business Owner
-        </div>
-
-        {/* Rating */}
-        <div className="absolute top-30 left-4 flex items-center">
-          {[1, 2, 3, 4, 5].map((star) => (
-            <span key={star} className="text-yellow-400 text-[18px]">
-              ★
-            </span>
-          ))}
-        </div>
-      </div>
-
     </section>
   );
 };

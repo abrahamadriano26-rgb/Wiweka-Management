@@ -1,59 +1,102 @@
-import type { NextPage } from "next";
 import Image from "next/image";
 
-const Copyright: NextPage = () => {
+const Copyright = () => {
   return (
-    <div className="w-full h-42.5 relative bg-white overflow-hidden text-left text-[14px] text-black font-inter">
+    <footer
+      className="
+        w-full
+        bg-white
+        overflow-hidden
+        text-black
+        font-inter
+        px-4
+        sm:px-8
+        md:px-12
+        lg:px-20
+        pt-10
+        sm:pt-12
+        md:pt-14
+        pb-6
+      "
+    >
+      {/* Main Footer */}
+<div
+  className="
+    w-full
+    max-w-7xl
+    mx-auto
+    flex
+    flex-col
+    md:flex-row
+    md:justify-between
+    md:items-start
+    gap-8
+    md:gap-16
+    lg:gap-32
+  "
+>
+  {/* Company */}
+  <div className="flex flex-col md:flex-1">
+    <div className="text-4.5 sm:text-5 font-medium">
+      WIWEKA MANAGEMENT
+    </div>
 
-      {/* Copyright */}
-      <div className="absolute top-33.25 left-144 text-[12px] inline-block w-85.25 h-7.5">
-        © 2026 Wiweka Management. All Rights Reserved.
-      </div>
+    <p className="mt-3 max-w-140 text-3.5 sm:text-3.75 leading-normal">
+      Professional business management solutions for sustainable growth.
+    </p>
+  </div>
 
-      {/* Email */}
-      <div className="absolute top-5.5 left-281 flex items-center gap-2">
-        <Image
-          src="/Email.jpg"
-          alt="Email"
-          width={21}
-          height={21}
-          className="h-5.25 w-5.25 relative object-cover"
-        />
+  {/* Contact */}
+  <div
+    className="
+      flex
+      flex-col
+      gap-3
+      md:w-80
+      lg:w-88
+      shrink-0
+    "
+  >
+    {/* Email */}
+    <div className="flex items-center gap-2">
+      <Image
+        src="/Email.jpg"
+        alt="Email"
+        width={21}
+        height={21}
+        className="w-5.25 h-5.25 object-cover shrink-0"
+      />
 
-        <div className="h-3.75 w-59.5 relative inline-block shrink-0">
-          contact@wiweka-management.com
-        </div>
-      </div>
+      <span className="text-3.5 sm:text-3.75">
+        contact@wiweka-management.com
+      </span>
+    </div>
 
-      {/* Phone */}
-      <div className="absolute top-11.25 left-281 flex items-center gap-1.25">
-        <Image
-          src="/Telepon.jpg"
-          alt="Phone"
-          width={26}
-          height={26}
-          className="h-6.5 w-6.5 relative object-cover"
-        />
+    {/* Phone */}
+    <div className="flex items-center gap-2">
+      <Image
+        src="/Telepon.jpg"
+        alt="Phone"
+        width={26}
+        height={26}
+        className="w-6.5 h-6.5 object-cover shrink-0"
+      />
 
-        <div className="h-3.25 w-30.75 relative inline-block shrink-0">
-          +62 8123 871353
-        </div>
-      </div>
-
-      {/* Company Name */}
-      <div className="absolute top-7 left-22.25 text-[18px]">
-        WIWEKA MANAGEMENT
-      </div>
-
-      {/* Description */}
-      <div className="absolute top-14.5 left-22.25">
-        Professional business management solutions for sustainable growth.
-      </div>
+      <span className="text-3.5 sm:text-3.75">
+        +62 8123 871353
+      </span>
+    </div>
+  </div>
+</div>
 
       {/* Divider */}
-      <div className="absolute top-[128.5px] left-[548.5px] border-black border-solid border-t box-border w-85.75 h-px transform-[rotate(-0.2deg)] origin-top-left opacity-25" />
+      <div className="w-full max-w-214 mx-auto mt-10 border-t border-black opacity-25" />
 
-    </div>
+      {/* Copyright */}
+      <div className="w-full text-center mt-5 text-3 sm:text-3.25">
+        © 2026 Wiweka Management. All Rights Reserved.
+      </div>
+    </footer>
   );
 };
 

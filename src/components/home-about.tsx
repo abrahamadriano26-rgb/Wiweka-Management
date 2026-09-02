@@ -1,16 +1,63 @@
 const HomeAbout = () => {
   return (
-    <section className="w-full h-181.5 bg-darkslateblue overflow-hidden flex flex-col items-center py-11.75 px-20 box-border gap-15 text-left text-white font-inter">
-
+    <section
+      className="
+        w-full
+        bg-darkslateblue
+        overflow-hidden
+        flex flex-col
+        items-center
+        px-4
+        sm:px-6
+        md:px-10
+        lg:px-20
+        py-12
+        sm:py-14
+        md:py-16
+        lg:py-18
+        gap-12
+        sm:gap-14
+        md:gap-16
+        lg:gap-20
+        text-left
+        text-white
+        font-inter
+      "
+    >
       {/* Judul */}
-      <div className="w-7xl relative font-bold text-[3rem]">
+      <div
+        className="
+          w-full
+          max-w-7xl
+          relative
+          font-bold
+          text-7
+          sm:text-9
+          md:text-11
+          lg:text-12
+          leading-[1.2]
+          text-center
+        "
+      >
         Professional Solutions for Accounting, Tax, and Business Consulting
       </div>
 
       {/* Deskripsi */}
-      <div className="self-stretch h-66 flex items-center justify-center">
-        <div className="h-29.5 w-7xl flex items-center justify-center">
-          <div className="w-325.5 relative inline-block shrink-0 font-sf-pro text-[1.25rem]">
+      <div className="w-full max-w-7xl flex items-center justify-center">
+        <div className="w-full flex items-center justify-center">
+          <div
+            className="
+              w-full
+              max-w-300
+              relative
+              font-sf-pro
+              text-4
+              sm:text-4.25
+              md:text-4.5
+              lg:text-5
+              leading-[1.7]
+            "
+          >
             Wiweka Management is a trusted partner in providing professional
             accounting, tax, and business consulting services for local and
             international companies, small and medium-sized enterprises
@@ -18,22 +65,25 @@ const HomeAbout = () => {
             clients manage their finances and fulfill their tax obligations
             accurately, efficiently, and in compliance with applicable
             regulations.
+
             <br />
             <br />
+
             Backed by a team of experienced and dedicated professionals, we
             deliver tailored solutions that meet the unique needs of every
             business. Our commitment to quality, reliability, and excellence
             enables our clients to focus on growing their businesses with
             confidence while we take care of their financial and compliance
             needs.
+
             <br />
             <br />
+
             Start your business journey with Wiweka Management and discover
-            reliable solutions designed to support their long-term success
+            reliable solutions designed to support their long-term success.
           </div>
         </div>
       </div>
-
     </section>
   );
 };
