@@ -1,10 +1,9 @@
+import OurServiceTitle from "@/components/ourservice-title";
 
-export default function Service() {
+export default function OurServicePage() {
   return (
-    <>
-      <main>
-        <h1>Our Service</h1>
-      </main>
-    </>
+    <main>
+      <OurServiceTitle />
+    </main>
   );
 }
