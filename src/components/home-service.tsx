@@ -9,7 +9,6 @@ const HomeService = () => {
         shadow-[inset_0_0.25rem_0.375rem_0.25rem_rgba(0,0,0,0.25)]
         overflow-hidden
 
-        text-center
         text-black
         font-inter
 
@@ -24,22 +23,22 @@ const HomeService = () => {
         lg:px-12
       "
     >
-
       {/* ================= JUDUL ================= */}
       <h2
         className="
-          mb-10
-          sm:mb-12
-          md:mb-14
-          lg:mb-12
+          mb-16
+          sm:mb-18
+          md:mb-20
+          lg:mb-22
 
-          text-8
-          sm:text-10
-          md:text-12
-          lg:text-12
+          text-[2.25rem]
+          sm:text-[2.5rem]
+          md:text-[2.75rem]
+          lg:text-[3rem]
 
           font-bold
-          leading-tight
+          leading-[1.1]
+          text-center
 
           [text-shadow:0_0.25rem_0.25rem_rgba(0,0,0,0.25)]
         "
@@ -47,338 +46,326 @@ const HomeService = () => {
         Our Service
       </h2>
 
+      <div
+      className="
+      mx-auto
+      w-full
+      max-w-317.5
+
+      mt-8
+      sm:mt-10
+      md:mt-12
+      lg:mt-14
+
+      grid
+      grid-cols-1
+      md:grid-cols-2
+      lg:grid-cols-3
+
+      justify-items-center
+      "
+      />
 
       {/* ================= CARDS ================= */}
       <div
         className="
           mx-auto
           w-full
-          max-w-80
-          sm:max-w-160
-          md:max-w-176
-          lg:max-w-317.5
+          max-w-317.5
 
           grid
           grid-cols-1
           md:grid-cols-2
           lg:grid-cols-3
 
-          gap-6
-          sm:gap-8
-          lg:gap-8
+          gap-8
 
           justify-items-center
         "
       >
-
         {/* ================= ACCOUNTING ================= */}
         <div
           className="
-            relative
             w-full
-            max-w-64
-            sm:max-w-67.5
+            max-w-67.5
+            min-h-95
 
-            h-76
-            sm:h-77
-
-            rounded-3.75
+            rounded-[0.9375rem]
             bg-darkslateblue
 
             shadow-[0_0.25rem_0.25rem_rgba(0,0,0,0.25)]
 
             overflow-hidden
+
+            flex
+            flex-col
           "
         >
-          {/* Background */}
+          {/* PUTIH */}
           <div
             className="
-              absolute
-              top-0
-              left-0
-
-              w-full
-              h-full
-
+              flex-1
               bg-white/70
-              rounded-3.75
 
-              z-0
-            "
-          />
+              rounded-[0.9375rem]
+              overflow-hidden
 
-          {/* Image */}
-          <Image
-            src="/service 1.avif"
-            alt="Accounting and Bookkeeping"
-            width={270}
-            height={160}
-            className="
-              absolute
-              top-0
-              left-0
-
-              w-full
-              h-40
-
-              rounded-3.75
-
-              object-cover
-              z-10
-            "
-          />
-
-          {/* Title */}
-          <h3
-            className="
-              absolute
-              top-41.25
-              left-4
-              right-4
-
-              text-4
-              font-semibold
-              leading-tight
-              text-left
-              text-black
-
-              z-20
+              flex
+              flex-col
             "
           >
-            Accounting and Bookkeeping
-          </h3>
+            {/* Gambar */}
+            <Image
+              src="/service 1.avif"
+              alt="Accounting and Bookkeeping"
+              width={270}
+              height={160}
+              className="
+                w-full
+                h-40
+                object-cover
+                shrink-0
+              "
+            />
 
-          {/* Description */}
-          <p
-            className="
-              absolute
-              top-52
-              left-3
-              right-3
+            {/* Content */}
+            <div
+              className="
+                flex
+                flex-col
+                items-center
+                gap-3
 
-              text-3.25
-              sm:text-3.25
+                px-4
+                pt-3.5
+                pb-4.5
+              "
+            >
+              {/* Judul */}
+              <h3
+                className="
+                  text-[1rem]
+                  font-semibold
+                  leading-[1.2]
 
-              font-semibold
-              leading-[1.35]
+                  text-center
+                  text-black
+                "
+              >
+                Accounting and Bookkeeping
+              </h3>
 
-              text-black
+              {/* Deskripsi */}
+              <p
+                className="
+                  text-[0.8125rem]
+                  font-semibold
+                  leading-normal
 
-              z-20
-            "
-          >
-            We provide professional accounting and bookkeeping services to help
-            businesses manage financial records, monitor transactions, and
-            prepare accurate financial reports.
-          </p>
+                  text-center
+                  text-black
+                "
+              >
+                We provide professional accounting and bookkeeping services to
+                help businesses manage financial records, monitor transactions,
+                and prepare accurate financial reports.
+              </p>
+            </div>
+          </div>
+
+          {/* BIRU BAWAH */}
+          <div className="h-6 shrink-0 bg-darkslateblue" />
         </div>
-
 
         {/* ================= TAX ================= */}
         <div
           className="
-            relative
             w-full
-            max-w-64
-            sm:max-w-67.5
+            max-w-67.5
+            min-h-95
 
-            h-76
-            sm:h-77
-
-            rounded-3.75
+            rounded-[0.9375rem]
             bg-darkslateblue
 
             shadow-[0_0.25rem_0.25rem_rgba(0,0,0,0.25)]
 
             overflow-hidden
+
+            flex
+            flex-col
           "
         >
-          {/* Background */}
+          {/* PUTIH */}
           <div
             className="
-              absolute
-              top-0
-              left-0
-
-              w-full
-              h-full
-
+              flex-1
               bg-white/70
-              rounded-3.75
 
-              z-0
-            "
-          />
+              rounded-[0.9375rem]
+              overflow-hidden
 
-          {/* Image */}
-          <Image
-            src="/service 2.avif"
-            alt="Tax Planning and Reporting"
-            width={270}
-            height={153}
-            className="
-              absolute
-              top-0
-              left-0
-
-              w-full
-              h-38.25
-
-              rounded-3.75
-
-              object-cover
-              z-10
-            "
-          />
-
-          {/* Title */}
-          <h3
-            className="
-              absolute
-              top-41.25
-              left-4
-              right-4
-
-              text-4
-              font-semibold
-              leading-tight
-              text-left
-              text-black
-
-              z-20
+              flex
+              flex-col
             "
           >
-            Tax Planning and Reporting
-          </h3>
+            {/* Gambar */}
+            <Image
+              src="/service 2.avif"
+              alt="Tax Planning and Reporting"
+              width={270}
+              height={153}
+              className="
+                w-full
+                h-38.25
+                object-cover
+                shrink-0
+              "
+            />
 
-          {/* Description */}
-          <p
-            className="
-              absolute
-              top-52
-              left-3
-              right-3
+            {/* Content */}
+            <div
+              className="
+                flex
+                flex-col
+                items-center
+                gap-3
 
-              text-3.25
+                px-4
+                pt-3.5
+                pb-4.5
+              "
+            >
+              {/* Judul */}
+              <h3
+                className="
+                  text-[1rem]
+                  font-semibold
+                  leading-[1.2]
 
-              font-semibold
-              leading-[1.35]
+                  text-center
+                  text-black
+                "
+              >
+                Tax Planning and Reporting
+              </h3>
 
-              text-black
+              {/* Deskripsi */}
+              <p
+                className="
+                  text-[0.8125rem]
+                  font-semibold
+                  leading-normal
 
-              z-20
-            "
-          >
-            We assist businesses with tax planning, calculation, administration,
-            and reporting to help ensure that tax obligations are managed
-            properly and efficiently.
-          </p>
+                  text-center
+                  text-black
+                "
+              >
+                We assist businesses with tax planning, calculation,
+                administration, and reporting to help ensure that tax
+                obligations are managed properly and efficiently.
+              </p>
+            </div>
+          </div>
+
+          {/* BIRU BAWAH */}
+          <div className="h-6 shrink-0 bg-darkslateblue" />
         </div>
-
 
         {/* ================= BUSINESS CONSULTING ================= */}
         <div
           className="
-            relative
             w-full
-            max-w-64
-            sm:max-w-67.5
+            max-w-67.5
+            min-h-95
 
-            h-76
-            sm:h-77
-
-            rounded-3.75
+            rounded-[0.9375rem]
             bg-darkslateblue
 
             shadow-[0_0.25rem_0.25rem_rgba(0,0,0,0.25)]
 
             overflow-hidden
+
+            flex
+            flex-col
           "
         >
-          {/* Background */}
+          {/* PUTIH */}
           <div
             className="
-              absolute
-              top-0
-              left-0
-
-              w-full
-              h-full
-
+              flex-1
               bg-white/70
-              rounded-3.75
 
-              z-0
-            "
-          />
+              rounded-[0.9375rem]
+              overflow-hidden
 
-          {/* Image */}
-          <Image
-            src="/service 3.avif"
-            alt="Business Consulting and Audit Support"
-            width={270}
-            height={153}
-            className="
-              absolute
-              top-0
-              left-0
-
-              w-full
-              h-38.25
-
-              rounded-3.75
-
-              object-cover
-              z-10
-            "
-          />
-
-          {/* Title */}
-          <h3
-            className="
-              absolute
-              top-41.25
-              left-4
-              right-4
-
-              text-4
-              font-semibold
-              leading-tight
-              text-left
-              text-black
-
-              z-20
+              flex
+              flex-col
             "
           >
-            Business Consulting and
-            <br />
-            Audit Support
-          </h3>
+            {/* Gambar */}
+            <Image
+              src="/service 3.avif"
+              alt="Business Consulting and Audit Support"
+              width={270}
+              height={153}
+              className="
+                w-full
+                h-38.25
+                object-cover
+                shrink-0
+              "
+            />
 
-          {/* Description */}
-          <p
-            className="
-              absolute
-              top-52
-              left-3
-              right-3
+            {/* Content */}
+            <div
+              className="
+                flex
+                flex-col
+                items-center
+                gap-3
 
-              text-3.25
+                px-4
+                pt-3.5
+                pb-4.5
+              "
+            >
+              {/* Judul */}
+              <h3
+                className="
+                  text-[1rem]
+                  font-semibold
+                  leading-[1.2]
 
-              font-semibold
-              leading-[1.35]
+                  text-center
+                  text-black
+                "
+              >
+                Business Consulting and
+                <br />
+                Audit Support
+              </h3>
 
-              text-black
+              {/* Deskripsi */}
+              <p
+                className="
+                  text-[0.8125rem]
+                  font-semibold
+                  leading-normal
 
-              z-20
-            "
-          >
-            We provide professional business consultation and audit support to
-            help companies improve performance, make informed decisions, and
-            overcome business challenges.
-          </p>
+                  text-center
+                  text-black
+                "
+              >
+                We provide professional business consultation and audit
+                support to help companies improve performance, make informed
+                decisions, and overcome business challenges.
+              </p>
+            </div>
+          </div>
+
+          {/* BIRU BAWAH */}
+          <div className="h-6 shrink-0 bg-darkslateblue" />
         </div>
-
       </div>
     </section>
   );

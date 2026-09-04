@@ -1,6 +1,4 @@
-import type { NextPage } from "next";
-
-const AboutTitle: NextPage = () => {
+const AboutTitle = () => {
   return (
     <section
       className="
@@ -8,49 +6,59 @@ const AboutTitle: NextPage = () => {
         min-h-84
         bg-darkslateblue
         overflow-hidden
+
         text-center
         text-white
         font-inter
+
         flex
         flex-col
         items-center
+
         px-4
         sm:px-6
         md:px-12
         lg:px-20
+
         py-14
         sm:py-16
         md:py-18
         lg:py-20
       "
     >
-      {/* Label */}
+      {/* ================= LABEL ================= */}
       <b
         className="
-          text-3.5
-          sm:text-4
-          md:text-4.25
+          text-[0.875rem]
+          sm:text-[1rem]
+          md:text-[1.0625rem]
+          lg:text-[1.125rem]
+
           leading-[1.2]
         "
       >
         ABOUT WIWEKA
       </b>
 
-      {/* Main Title */}
+      {/* ================= MAIN TITLE ================= */}
       <h1
         className="
           w-full
           max-w-225
+
           mt-6
           sm:mt-7
           md:mt-8
           lg:mt-9
-          text-8
-          sm:text-11
-          md:text-13
-          lg:text-16
+
+          text-[2.25rem]
+          sm:text-[2.75rem]
+          md:text-[3.25rem]
+          lg:text-[4rem]
+
           font-bold
           leading-[1.15]
+
           [text-shadow:0_0.25rem_0.25rem_rgba(0,0,0,0.25)]
         "
       >
@@ -59,21 +67,26 @@ const AboutTitle: NextPage = () => {
         Business Growth.
       </h1>
 
-      {/* Description */}
+      {/* ================= DESCRIPTION ================= */}
       <p
         className="
           w-full
           max-w-175
+
           mt-6
           sm:mt-7
           md:mt-8
           lg:mt-9
+
           px-2
-          text-3.5
-          sm:text-4
-          md:text-4.25
-          lg:text-4.5
+
+          text-[0.875rem]
+          sm:text-[1rem]
+          md:text-[1.0625rem]
+          lg:text-[1.125rem]
+
           leading-[1.6]
+
           [text-shadow:0_0.125rem_0.25rem_rgba(0,0,0,0.25)]
         "
       >

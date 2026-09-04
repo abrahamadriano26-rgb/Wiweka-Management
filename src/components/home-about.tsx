@@ -25,22 +25,22 @@ const HomeAbout = () => {
       "
     >
       {/* Judul */}
-      <div
+      <h2
         className="
           w-full
           max-w-7xl
           relative
           font-bold
-          text-7
-          sm:text-9
-          md:text-11
-          lg:text-12
+          text-3xl
+          sm:text-4xl
+          md:text-5xl
+          lg:text-[48px]
           leading-[1.2]
           text-center
         "
       >
         Professional Solutions for Accounting, Tax, and Business Consulting
-      </div>
+      </h2>
 
       {/* Deskripsi */}
       <div className="w-full max-w-7xl flex items-center justify-center">
@@ -51,10 +51,10 @@ const HomeAbout = () => {
               max-w-300
               relative
               font-sf-pro
-              text-4
-              sm:text-4.25
-              md:text-4.5
-              lg:text-5
+              text-base
+              sm:text-[17px]
+              md:text-lg
+              lg:text-xl
               leading-[1.7]
             "
           >

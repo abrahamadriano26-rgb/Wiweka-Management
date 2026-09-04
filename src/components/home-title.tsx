@@ -34,32 +34,38 @@ const HomeTitle = () => {
         font-inter
       "
     >
-      <b
+      {/* Judul */}
+      <h1
         className="
           relative
-          text-8
-          sm:text-10
-          md:text-12
-          lg:text-16
+          text-4xl
+          sm:text-5xl
+          md:text-6xl
+          lg:text-[64px]
+
+          font-bold
           leading-[1.15]
-          [text-shadow:0_0.25rem_0.25rem_rgba(0,0,0,0.25)]
+
+          [text-shadow:0_4px_4px_rgba(0,0,0,0.25)]
         "
       >
         Welcome to,
         <br />
         Wiweka Management
-      </b>
+      </h1>
 
-      <div
+      {/* Deskripsi */}
+      <p
         className="
           w-full
-          max-w-80
+          max-w-[320px]
           sm:max-w-md
           md:max-w-160
           lg:max-w-247.25
 
           relative
-          text-3.75
+
+          text-[15px]
           sm:text-base
           md:text-lg
           lg:text-2xl
@@ -70,7 +76,7 @@ const HomeTitle = () => {
       >
         We provide expert management of accounting and tax for businesses and
         individuals.
-      </div>
+      </p>
     </div>
   );
 };

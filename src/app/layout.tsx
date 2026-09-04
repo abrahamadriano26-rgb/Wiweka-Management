@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/navbar";
+import Copyright from "@/components/copyright";
 
 export const metadata: Metadata = {
   title: "Wiweka Management",
@@ -21,6 +22,8 @@ export default function RootLayout({
         <main className="pt-21.5">
           {children}
         </main>
+
+        <Copyright />
       </body>
     </html>
   );
