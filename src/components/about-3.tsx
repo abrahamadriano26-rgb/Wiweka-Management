@@ -29,7 +29,7 @@ const About3 = () => {
   return (
     <section className="w-full overflow-hidden bg-darkslateblue">
       {/* Container */}
-      <div className="mx-auto min-h-[517px] max-w-[1440px] px-6 py-12 sm:px-8 lg:px-16">
+      <div className="mx-auto min-h-129.25max-w-[1440px] px-6 py-12 sm:px-8 lg:px-16">
         
         {/* ================= HEADER ================= */}
         <div className="text-center">
@@ -45,13 +45,13 @@ const About3 = () => {
         </div>
 
         {/* ================= CARDS ================= */}
-        <div className="mx-auto mt-12 grid max-w-[1010px] grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mx-auto mt-12 grid max-w-252.5 grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
           
           {/* Card */}
           {features.map((feature) => (
             <div
               key={feature.number}
-              className="relative h-[196px] w-full rounded-[15px] bg-white p-6 shadow-[0px_4px_4px_rgba(0,0,0,0.25)] transition duration-300 hover:-translate-y-1 hover:shadow-[0px_8px_15px_rgba(0,0,0,0.25)]"
+              className="relative h-49 w-full rounded-[15px] bg-white p-6 shadow-[0px_4px_4px_rgba(0,0,0,0.25)] transition duration-300 hover:-translate-y-1 hover:shadow-[0px_8px_15px_rgba(0,0,0,0.25)]"
             >
               {/* Number */}
               <span className="absolute left-6 top-5 text-sm font-medium text-black">
@@ -59,7 +59,7 @@ const About3 = () => {
               </span>
 
               {/* Content */}
-              <div className="absolute left-6 top-[84px] right-5">
+              <div className="absolute left-6 top-21 right-5">
                 <h3 className="text-sm font-medium text-black drop-shadow-[0px_4px_4px_rgba(0,0,0,0.25)] sm:text-base">
                   {feature.title}
                 </h3>
