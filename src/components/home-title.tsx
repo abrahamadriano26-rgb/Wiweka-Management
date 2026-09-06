@@ -65,10 +65,10 @@ const HomeTitle = () => {
 
           relative
 
-          text-[15px]
-          sm:text-base
-          md:text-lg
-          lg:text-2xl
+          text-[0.8125rem]
+          sm:text-[0.875rem]
+          md:text-[0.9375rem]
+          lg:text-[1rem]
 
           leading-[1.6]
           text-center

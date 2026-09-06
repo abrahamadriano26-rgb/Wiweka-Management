@@ -1,9 +1,11 @@
-
+import ContactUs1 from "@/components/contact-1";
+import ContactUs2 from "@/components/contact-2";
 export default function Contact() {
   return (
     <>
       <main>
-        <h1>Contact Us</h1>
+        <ContactUs1 />
+        <ContactUs2 />
       </main>
     </>
   );

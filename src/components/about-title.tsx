@@ -80,10 +80,10 @@ const AboutTitle = () => {
 
           px-2
 
-          text-[0.875rem]
-          sm:text-[1rem]
-          md:text-[1.0625rem]
-          lg:text-[1.125rem]
+          text-[0.8125rem]
+          sm:text-[0.875rem]
+          md:text-[0.9375rem]
+          lg:text-[1rem]
 
           leading-[1.6]
 

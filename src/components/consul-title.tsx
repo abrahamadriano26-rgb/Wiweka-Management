@@ -1,4 +1,4 @@
-const OurServiceTitle = () => {
+const ConsultationTitle = () => {
   return (
     <section
       className="
@@ -43,39 +43,21 @@ const OurServiceTitle = () => {
           [text-shadow:0_4px_4px_rgba(0,0,0,0.25)]
         "
       >
-        Our Service
+        Let&apos;s Discuss Your Business 
       </h1>
 
       {/* ================= SPACER ================= */}
       <div className="h-3 sm:h-4 md:h-5 lg:h-6" />
-
-      {/* ================= GARIS ================= */}
-      <div
-        className="
-          w-35
-          sm:w-40
-          md:w-45
-          lg:w-50
-
-          h-0.5
-
-          bg-white
-          opacity-80
-        "
-      />
-
-      {/* ================= SPACER ================= */}
-      <div className="h-6 sm:h-7 md:h-8 lg:h-10" />
 
       {/* ================= DESKRIPSI ================= */}
       <p
         className="
           m-0
 
-          max-w-[20rem]
-          sm:max-w-125
-          md:max-w-175
-          lg:max-w-200
+          max-w-88
+          sm:max-w-160
+          md:max-w-220
+          lg:max-w-280
 
           text-[0.8125rem]
           sm:text-[0.875rem]
@@ -83,16 +65,17 @@ const OurServiceTitle = () => {
           lg:text-[1rem]
 
           font-normal
+          italic
           leading-normal
 
           text-center
         "
       >
-        Accounting services and professional consultations designed to help
-        your business develop.
+        Get professional guidance and personalized solutions to help your business manage financial 
+challenges, improve performance, and grow with confidence.
       </p>
     </section>
   );
 };
 
-export default OurServiceTitle;
+export default ConsultationTitle;

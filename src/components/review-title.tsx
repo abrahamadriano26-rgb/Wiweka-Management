@@ -1,4 +1,4 @@
-const OurServiceTitle = () => {
+const CustomerReviewTitle = () => {
   return (
     <section
       className="
@@ -43,7 +43,7 @@ const OurServiceTitle = () => {
           [text-shadow:0_4px_4px_rgba(0,0,0,0.25)]
         "
       >
-        Our Service
+        Customer Review
       </h1>
 
       {/* ================= SPACER ================= */}
@@ -72,10 +72,11 @@ const OurServiceTitle = () => {
         className="
           m-0
 
-          max-w-[20rem]
-          sm:max-w-125
-          md:max-w-175
-          lg:max-w-200
+          w-full
+          max-w-88
+          sm:max-w-160
+          md:max-w-220
+          lg:max-w-280
 
           text-[0.8125rem]
           sm:text-[0.875rem]
@@ -83,16 +84,16 @@ const OurServiceTitle = () => {
           lg:text-[1rem]
 
           font-normal
+          italic
           leading-normal
 
           text-center
         "
       >
-        Accounting services and professional consultations designed to help
-        your business develop.
+        Discover the experiences of businesses that trust WIWEKA Management for professional accounting, tax, and business consulting solutions.
       </p>
     </section>
   );
 };
 
-export default OurServiceTitle;
+export default CustomerReviewTitle;
