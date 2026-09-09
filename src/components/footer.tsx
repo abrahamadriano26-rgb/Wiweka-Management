@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const Copyright = () => {
+const Footer = () => {
   return (
     <footer
       className="
@@ -68,7 +68,9 @@ const Copyright = () => {
       />
 
       <span className="text-3.5 sm:text-3.75">
+        <a href="mailto:contact@wiweka-management.com">
         contact@wiweka-management.com
+        </a>
       </span>
     </div>
 
@@ -83,7 +85,9 @@ const Copyright = () => {
       />
 
       <span className="text-3.5 sm:text-3.75">
+        <a href="https://wa.me/628123871353" target="_blank" rel="noopener noreferrer">
         +62 8123 871353
+        </a>
       </span>
     </div>
   </div>
@@ -100,4 +104,4 @@ const Copyright = () => {
   );
 };
 
-export default Copyright;
+export default Footer;

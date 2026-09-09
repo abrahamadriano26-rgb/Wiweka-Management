@@ -31,7 +31,7 @@ const About3 = () => {
       {/* Container */}
       <div className="mx-auto min-h-129.25max-w-[1440px] px-6 py-12 sm:px-8 lg:px-16">
         
-        {/* ================= HEADER ================= */}
+        {/* HEADER */}
         <div className="text-center">
           <p className="text-sm font-medium text-white sm:text-base">
             WHY CHOOSE WIWEKA
@@ -44,7 +44,7 @@ const About3 = () => {
           </h2>
         </div>
 
-        {/* ================= CARDS ================= */}
+        {/* CARDS */}
         <div className="mx-auto mt-12 grid max-w-252.5 grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
           
           {/* Card */}

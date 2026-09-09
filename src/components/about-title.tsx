@@ -26,7 +26,7 @@ const AboutTitle = () => {
         lg:py-20
       "
     >
-      {/* ================= LABEL ================= */}
+      {/* LABEL */}
       <b
         className="
           text-[0.875rem]
@@ -40,7 +40,7 @@ const AboutTitle = () => {
         ABOUT WIWEKA
       </b>
 
-      {/* ================= MAIN TITLE ================= */}
+      {/* MAIN TITLE */}
       <h1
         className="
           w-full
@@ -67,7 +67,7 @@ const AboutTitle = () => {
         Business Growth.
       </h1>
 
-      {/* ================= DESCRIPTION ================= */}
+      {/* DESCRIPTION */}
       <p
         className="
           w-full

@@ -23,7 +23,7 @@ const OurService2 = () => {
         lg:px-12
       "
     >
-      {/* ================= CARDS ================= */}
+      {/* CARDS */}
       <div
         className="
           mx-auto
@@ -40,7 +40,7 @@ const OurService2 = () => {
           justify-items-center
         "
       >
-        {/* ================= ACCOUNTING ================= */}
+        {/* ACCOUNTING */}
         <div
           className="
             w-full
@@ -134,7 +134,7 @@ const OurService2 = () => {
           <div className="h-6 shrink-0 bg-darkslateblue" />
         </div>
 
-        {/* ================= TAX ================= */}
+        {/* TAX */}
         <div
           className="
             w-full
@@ -228,7 +228,7 @@ const OurService2 = () => {
           <div className="h-6 shrink-0 bg-darkslateblue" />
         </div>
 
-        {/* ================= BUSINESS CONSULTING ================= */}
+        {/* BUSINESS CONSULTING */}
         <div
           className="
             w-full

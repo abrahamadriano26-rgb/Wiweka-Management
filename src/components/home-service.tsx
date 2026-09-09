@@ -23,7 +23,7 @@ const HomeService = () => {
         lg:px-12
       "
     >
-      {/* ================= JUDUL ================= */}
+      {/* JUDUL */}
       <h2
         className="
           mb-16
@@ -66,7 +66,7 @@ const HomeService = () => {
       "
       />
 
-      {/* ================= CARDS ================= */}
+      {/* CARDS */}
       <div
         className="
           mx-auto
@@ -83,7 +83,7 @@ const HomeService = () => {
           justify-items-center
         "
       >
-        {/* ================= ACCOUNTING ================= */}
+        {/* ACCOUNTING */}
         <div
           className="
             w-full
@@ -177,7 +177,7 @@ const HomeService = () => {
           <div className="h-6 shrink-0 bg-darkslateblue" />
         </div>
 
-        {/* ================= TAX ================= */}
+        {/* TAX */}
         <div
           className="
             w-full
@@ -271,7 +271,7 @@ const HomeService = () => {
           <div className="h-6 shrink-0 bg-darkslateblue" />
         </div>
 
-        {/* ================= BUSINESS CONSULTING ================= */}
+        {/* BUSINESS CONSULTING */}
         <div
           className="
             w-full
