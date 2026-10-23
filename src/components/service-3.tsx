@@ -27,7 +27,7 @@ const OurService3 = () => {
         text-center
       "
     >
-      {/* ================= JUDUL ================= */}
+      {/* JUDUL */}
       <h1
         className="
           m-0
@@ -47,7 +47,7 @@ const OurService3 = () => {
         WHY CHOOSE WIWEKA MANAGEMENT?
       </h1>
 
-      {/* ================= GARIS ================= */}
+      {/* GARIS */}
       <div
         className="
           mt-3
@@ -67,10 +67,10 @@ const OurService3 = () => {
         "
       />
 
-      {/* ================= SPACER ================= */}
+      {/* SPACER */}
       <div className="h-4 sm:h-5 md:h-6 lg:h-8" />
 
-      {/* ================= DESKRIPSI ================= */}
+      {/* DESKRIPSI */}
       <p
         className="
           m-0
@@ -95,7 +95,7 @@ const OurService3 = () => {
         solutions to support your company&apos;s sustainable growth.
       </p>
 
-      {/* ================= 3 POINT ================= */}
+      {/* 3 POINT */}
       <div
         className="
           mt-8
@@ -111,7 +111,7 @@ const OurService3 = () => {
           justify-center
         "
       >
-        {/* ================= PROFESSIONAL TEAM ================= */}
+        {/* PROFESSIONAL TEAM */}
         <div
           className="
             flex
@@ -166,7 +166,7 @@ const OurService3 = () => {
           </p>
         </div>
 
-        {/* ================= GARIS 1 ================= */}
+        {/* GARIS 1 */}
         <div
           className="
             w-px
@@ -177,7 +177,7 @@ const OurService3 = () => {
           "
         />
 
-        {/* ================= TRUSTED SERVICE ================= */}
+        {/* TRUSTED SERVICE */}
         <div
           className="
             flex
@@ -232,7 +232,7 @@ const OurService3 = () => {
           </p>
         </div>
 
-        {/* ================= GARIS 2 ================= */}
+        {/* GARIS 2 */}
         <div
           className="
             w-px
@@ -243,7 +243,7 @@ const OurService3 = () => {
           "
         />
 
-        {/* ================= BUSINESS GROWTH ================= */}
+        {/* BUSINESS GROWTH */}
         <div
           className="
             flex

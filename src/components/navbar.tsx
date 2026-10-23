@@ -11,17 +11,15 @@ const Navbar = () => {
 
   const menuItems = [
     { name: "Home", href: "/" },
-    { name: "About Us", href: "/about" },
-    { name: "Our Service", href: "/service" },
-    { name: "Customer Review", href: "/review" },
-    { name: "Consultation", href: "/consultation" },
-    { name: "Contact Us", href: "/contact" },
+    { name: "About", href: "/about" },
+    { name: "Service", href: "/service" },
+    { name: "Contact", href: "/contact" },
   ];
 
   return (
     <nav className="fixed top-0 left-0 z-50 w-full bg-white shadow-[0_0.25rem_0.25rem_rgba(0,0,0,0.15)]">
       
-      {/* ================= NAVBAR UTAMA ================= */}
+      {/* NAVBAR UTAMA */}
       <div
         className="
           w-full
@@ -41,7 +39,7 @@ const Navbar = () => {
           justify-between
         "
       >
-        {/* ================= LOGO ================= */}
+        {/* LOGO */}
         <div className="flex items-center min-w-0">
           <Image
             src="/Logo.avif"
@@ -60,7 +58,7 @@ const Navbar = () => {
           />
         </div>
 
-        {/* ================= MENU DESKTOP ================= */}
+        {/* MENU DESKTOP */}
         <div
           className="
             hidden
@@ -103,7 +101,7 @@ const Navbar = () => {
           })}
         </div>
 
-        {/* ================= HAMBURGER HP + IPAD ================= */}
+        {/* HAMBURGER HP + IPAD */}
         <div className="flex items-center justify-end shrink-0 lg:hidden">
           <button
             type="button"
@@ -206,7 +204,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* ================= MENU MOBILE + IPAD ================= */}
+      {/* MENU MOBILE + IPAD */}
       <div
         className={`
           lg:hidden

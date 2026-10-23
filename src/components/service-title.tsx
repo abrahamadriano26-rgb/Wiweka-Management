@@ -27,7 +27,7 @@ const OurServiceTitle = () => {
         text-center
       "
     >
-      {/* ================= JUDUL ================= */}
+      {/* JUDUL */}
       <h1
         className="
           m-0
@@ -46,10 +46,10 @@ const OurServiceTitle = () => {
         Our Service
       </h1>
 
-      {/* ================= SPACER ================= */}
+      {/* SPACER */}
       <div className="h-3 sm:h-4 md:h-5 lg:h-6" />
 
-      {/* ================= GARIS ================= */}
+      {/* GARIS */}
       <div
         className="
           w-35
@@ -64,10 +64,10 @@ const OurServiceTitle = () => {
         "
       />
 
-      {/* ================= SPACER ================= */}
+      {/* SPACER */}
       <div className="h-6 sm:h-7 md:h-8 lg:h-10" />
 
-      {/* ================= DESKRIPSI ================= */}
+      {/* DESKRIPSI */}
       <p
         className="
           m-0

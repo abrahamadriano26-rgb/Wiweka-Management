@@ -47,7 +47,7 @@ const HomeReview = () => {
         lg:py-20
       "
     >
-      {/* ================= JUDUL ================= */}
+      {/* JUDUL */}
       <div className="w-full flex flex-col items-center">
         <h2
           className="
@@ -85,7 +85,7 @@ const HomeReview = () => {
         />
       </div>
 
-      {/* ================= REVIEWS ================= */}
+      {/* REVIEWS */}
       <div
         className="
           w-full
@@ -125,7 +125,7 @@ const HomeReview = () => {
               mx-auto
             "
           >
-            {/* ================= NAMA ================= */}
+            {/* NAMA */}
             <div
               className="
                 w-full
@@ -166,7 +166,7 @@ const HomeReview = () => {
               </span>
             </div>
 
-            {/* ================= CARD ================= */}
+            {/* CARD */}
             <div
               className="
                 w-full
