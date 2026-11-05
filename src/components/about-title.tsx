@@ -1,100 +1,92 @@
-const AboutTitle = () => {
+
+import Image from "next/image";
+
+export default function HomeTitle() {
   return (
     <section
-      className="
-        w-full
-        min-h-84
-        bg-darkslateblue
-        overflow-hidden
-
-        text-center
-        text-white
-        font-inter
-
-        flex
-        flex-col
-        items-center
-
-        px-4
-        sm:px-6
-        md:px-12
-        lg:px-20
-
-        py-14
-        sm:py-16
-        md:py-18
-        lg:py-20
-      "
+      id="home"
+      className="relative isolate min-h-[906px] w-full overflow-hidden bg-[radial-gradient(271.69%_141.42%_at_100%_0%,_#111c3c,_#114dff)] font-sf-pro text-left text-lavender"
     >
-      {/* LABEL */}
-      <b
-        className="
-          text-[0.875rem]
-          sm:text-[1rem]
-          md:text-[1.0625rem]
-          lg:text-[1.125rem]
+      {/* Background decoration */}
+      <div className="pointer-events-none absolute -left-32 top-24 -z-10 h-80 w-80 rounded-full bg-blue-400/10 blur-3xl" />
 
-          leading-[1.2]
-        "
-      >
-        ABOUT WIWEKA
-      </b>
+      <div className="pointer-events-none absolute bottom-0 right-0 -z-10 h-96 w-96 rounded-full bg-sky-300/10 blur-3xl" />
 
-      {/* MAIN TITLE */}
-      <h1
-        className="
-          w-full
-          max-w-225
+      {/* Main container */}
+      <div className="relative mx-auto min-h-[906px] max-w-[1440px] px-6 md:px-10 lg:px-20">
 
-          mt-6
-          sm:mt-7
-          md:mt-8
-          lg:mt-9
+        {/* Text content */}
+        <div className="relative z-10 flex flex-col items-start justify-center py-20 lg:block lg:min-h-[906px] lg:py-0">
 
-          text-[2.25rem]
-          sm:text-[2.75rem]
-          md:text-[3.25rem]
-          lg:text-[4rem]
+          {/* Small label */}
+          <div className="mb-6 inline-flex items-center gap-3 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm text-white backdrop-blur-md lg:absolute lg:left-0 lg:top-[205px] lg:mb-0">
+            <span className="h-2 w-2 rounded-full bg-deepskyblue" />
+            <span>Accounting &amp; Tax Solutions</span>
+          </div>
 
-          font-bold
-          leading-[1.15]
+          {/* Main heading */}
+          <h1 className="animate-fade-up mb-6 max-w-[759px] font-inter text-[38px] font-bold leading-[1.2] tracking-tight text-white [text-shadow:0px_4px_4px_rgba(0,0,0,0.25)] sm:text-5xl lg:absolute lg:left-0 lg:top-[271px] lg:mb-0 lg:text-[54px]">
+            We provide{" "}
+            <span className="text-deepskyblue">
+              expert management of accounting and tax
+            </span>{" "}
+            for businesses and individuals.
+          </h1>
 
-          [text-shadow:0_0.25rem_0.25rem_rgba(0,0,0,0.25)]
-        "
-      >
-        Your Trusted Partner For
-        <br />
-        Business Growth.
-      </h1>
+          {/* Description */}
+          <p className="mb-8 max-w-[641px] text-base leading-8 text-lavender sm:text-lg lg:absolute lg:left-0 lg:top-[575px] lg:mb-0 lg:text-xl">
+            At Wiweka Management, we provide reliable accounting, tax, and
+            business consulting solutions tailored to your business needs.
+            Our experienced team helps you stay compliant, manage your
+            finances efficiently, and move forward with confidence.
+          </p>
 
-      {/* DESCRIPTION */}
-      <p
-        className="
-          w-full
-          max-w-175
+          {/* Action buttons */}
+          <div className="mb-10 flex flex-wrap items-center gap-4 lg:absolute lg:left-0 lg:top-[760px] lg:mb-0">
+            <a
+              href="#contact"
+              className="inline-flex items-center justify-center gap-2 rounded-lg bg-white px-6 py-3 font-semibold text-slateblue shadow-lg transition duration-300 hover:-translate-y-1 hover:bg-lavender"
+            >
+              Contact Us <span aria-hidden="true">→</span>
+            </a>
 
-          mt-6
-          sm:mt-7
-          md:mt-8
-          lg:mt-9
+            <a
+              href="#about"
+              className="inline-flex items-center justify-center rounded-lg border border-white/40 bg-white/5 px-6 py-3 font-semibold text-white backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:bg-white/15"
+            >
+              Learn More
+            </a>
+          </div>
 
-          px-2
+          {/* Mobile image */}
+          <div className="relative mt-2 h-[420px] w-full max-w-[439px] overflow-hidden rounded-2xl border border-white/20 shadow-2xl sm:h-[520px] lg:hidden">
+            <Image
+              src="/images/wiweka-office.jpg"
+              alt="Wiweka Management"
+              fill
+              priority
+              sizes="(max-width: 640px) 100vw, 439px"
+              className="object-cover"
+            />
 
-          text-[0.8125rem]
-          sm:text-[0.875rem]
-          md:text-[0.9375rem]
-          lg:text-[1rem]
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#111c3c]/40 via-transparent to-transparent" />
+          </div>
+        </div>
 
-          leading-[1.6]
+        {/* Desktop image */}
+        <div className="absolute right-10 top-[75px] hidden h-[659px] w-[min(36%,439px)] overflow-hidden rounded-[10px] border border-white/10 shadow-[0px_20px_60px_rgba(0,0,0,0.3)] lg:block xl:right-[50px]">
+          <Image
+            src="/images/wiweka-office.jpg"
+            alt="Wiweka Management"
+            fill
+            priority
+            sizes="(min-width: 1024px) 439px, 36vw"
+            className="object-cover transition-transform duration-700 hover:scale-[1.03]"
+          />
 
-          [text-shadow:0_0.125rem_0.25rem_rgba(0,0,0,0.25)]
-        "
-      >
-        Learn about WIWEKA Management and our commitment to supporting
-        business growth.
-      </p>
+          <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#111c3c]/30 via-transparent to-transparent" />
+        </div>
+      </div>
     </section>
   );
-};
-
-export default AboutTitle;
+}
