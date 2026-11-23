@@ -7,11 +7,7 @@ import HomeReview from "@/components/home-review";
 export default function Home() {
   return (
     <>
-      <HomeTitle />
-      <HomeImg />
-      <HomeAbout />
-      <HomeService />
-      <HomeReview />
+      </>
 
     </>
   );
