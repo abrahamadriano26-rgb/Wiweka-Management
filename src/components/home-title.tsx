@@ -1,64 +1,105 @@
 
 import Image from "next/image";
 
+const titleLines = [
+  {
+    text: "We provide",
+    color: "text-white",
+  },
+  {
+    text: "expert management of accounting",
+    color: "text-deepskyblue",
+  },
+  {
+    text: "and tax",
+    color: "text-deepskyblue",
+  },
+  {
+    text: "for businesses and individuals.",
+    color: "text-white",
+  },
+];
+
 export default function HomeTitle() {
+  let wordIndex = 0;
+
   return (
-    <section
-      id="home"
-      className="relative isolate min-h-[906px] w-full overflow-hidden bg-[radial-gradient(271.69%_141.42%_at_100%_0%,_#111c3c,_#114dff)] text-left text-lavender"
-    >
-      {/* Background decoration */}
-      <div className="pointer-events-none absolute -left-32 top-24 -z-10 h-80 w-80 rounded-full bg-blue-400/10 blur-3xl" />
+    <section className="hero-section relative w-full overflow-hidden
+      bg-[linear-gradient(90.06deg,#0a205f,#154999_99.5%,#d9d9d9)]">
 
-      <div className="pointer-events-none absolute bottom-0 right-0 -z-10 h-96 w-96 rounded-full bg-sky-300/10 blur-3xl" />
+      <div className="hero-content relative mx-auto min-h-[906px] max-w-[1440px]">
 
-      {/* Main container */}
-      <div className="relative mx-auto min-h-[906px] max-w-[1440px] px-6 md:px-10 lg:px-20">
+        {/* HERO TITLE */}
+        <div className="hero-title absolute left-[80px] top-[271px]
+          z-10 w-[759px] max-w-[55%]">
 
-        {/* Text content */}
-        <div className="relative z-10 flex flex-col items-start justify-center py-20 lg:block lg:min-h-[906px] lg:py-0">
+          <h1 className="font-inter text-[54px] font-bold
+            leading-[1.2] text-white
+            [filter:drop-shadow(0px_4px_4px_rgba(0,0,0,0.25))]">
 
-          {/* Main heading */}
-          <h1 className="animate-fade-up mb-6 max-w-[759px] font-inter text-[38px] font-bold leading-[1.2] tracking-tight text-white [text-shadow:0px_4px_4px_rgba(0,0,0,0.25)] sm:text-5xl lg:absolute lg:left-0 lg:top-[271px] lg:mb-0 lg:text-[54px]">
-            We provide{" "}
-            <span className="text-deepskyblue">
-              expert management of accounting and tax
-            </span>{" "}
-            for businesses and individuals.
+            {titleLines.map((line, lineIndex) => (
+              <span
+                key={lineIndex}
+                className={`block ${line.color}`}
+              >
+                {line.text.split(" ").map((word, index) => {
+                  const delay = wordIndex * 0.12;
+                  wordIndex++;
+
+                  return (
+                    <span
+                      key={`${lineIndex}-${index}`}
+                      className="inline-block mr-[0.16em]
+                      overflow-hidden align-bottom pb-[0.08em]"
+                    >
+                      <span
+                        className="hero-word inline-block"
+                        style={{
+                          animationDelay: `${delay}s`,
+                        }}
+                      >
+                        {word}
+                      </span>
+                    </span>
+                  );
+                })}
+              </span>
+            ))}
+
           </h1>
+        </div>
 
-          {/* Description */}
-          <p className="mb-8 max-w-[641px] text-base leading-8 text-lavender sm:text-lg lg:absolute lg:left-0 lg:top-[575px] lg:mb-0 lg:text-xl">
-            At Wiweka Management, we provide reliable accounting, tax, and
-            business consulting solutions tailored to your business needs.
-            Our experienced team helps you stay compliant, manage your
-            finances efficiently, and move forward with confidence.
+        {/* DESCRIPTION */}
+        <div className="hero-description absolute left-[80px]
+          top-[575px] z-10 w-[641px] max-w-[48%]">
+
+          <p className="font-sf-pro text-xl leading-relaxed text-lavender">
+            At Wiweka Management, we provide reliable accounting,
+            tax, and business consulting solutions tailored to your
+            business needs. Our experienced team helps you stay
+            compliant, manage your finances efficiently, and move
+            forward with confidence.
           </p>
 
-          {/* Mobile image */}
-          <div className="relative mt-2 h-[420px] w-full max-w-[439px] overflow-hidden rounded-2xl border border-white/20 shadow-2xl sm:h-[520px] lg:hidden">
-            <Image
-              src="/images/wiweka-office.jpg"
-              alt="Wiweka Management"
-              fill
-              priority
-              sizes="(max-width: 640px) 100vw, 439px"
-              className="object-cover"
-            />
-          </div>
         </div>
 
-        {/* Desktop image */}
-        <div className="absolute right-10 top-[75px] hidden h-[659px] w-[min(36%,439px)] overflow-hidden rounded-[10px] border border-white/10 shadow-[0px_20px_60px_rgba(0,0,0,0.3)] lg:block xl:right-[50px]">
+        {/* HERO IMAGE */}
+        <div className="hero-image absolute bottom-[172px]
+          left-[910px] z-0">
+
           <Image
-            src="/images/wiweka-office.jpg"
-            alt="Wiweka Management"
-            fill
+            src="/images/accounting.jpg"
+            alt="Wiweka Management accounting services"
+            width={439}
+            height={659}
             priority
-            sizes="(min-width: 1024px) 439px, 36vw"
-            className="object-cover transition-transform duration-700 hover:scale-[1.03]"
+            sizes="(max-width: 768px) 90vw, 439px"
+            className="h-[659px] w-[439px] rounded-[10px]
+            object-cover shadow-[0px_4px_4px_rgba(0,0,0,0.25)]"
           />
+
         </div>
+
       </div>
     </section>
   );

@@ -1,28 +1,52 @@
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 @import "tailwindcss";
 
 /* =========================================
-   WIWEKA MANAGEMENT - TAILWIND V4 THEME
+   WIWEKA MANAGEMENT THEME
 ========================================= */
 
 @theme {
-  /* Colors from Figma */
+  /* COLORS HERO */
   --color-lavender: #e8ecff;
-  --color-white: #ffffff;
   --color-deepskyblue: #6ebcfc;
 
-  /* Existing website colors */
-  --color-slateblue: #2c44ca;
-  --color-darkslateblue: #2d4aa2;
+  /* COLORS OUR SERVICE */
+  --color-aliceblue: #f3f7fc;
+  --color-steelblue: #17638a;
+  --color-midnightblue: #0a205f;
+  --color-slategray: #52617b;
 
-  /* Font families */
-  --font-inter: "Inter", Arial, sans-serif;
-  --font-sf-pro: "SF Pro Display", "SF Pro", Inter, Arial, sans-serif;
+  /* COLORS CUSTOMER REVIEW */
+  --color-skyblue: #92e4fa;
+
+  --color-lavender-100: #e0eaff;
+  --color-lavender-200: #dfe7f1;
+  --color-lavender-300: #d0ddf6;
+
+  --color-aliceblue-100: #edf9ff;
+  --color-aliceblue-200: #edf1f8;
+
+  --color-darkgoldenrod: #9b6500;
+  --color-darkslateblue: #13264d;
+  --color-lightblue: #c8eafb;
+
+  --color-white: #ffffff;
+
+  /* FONTS */
+  --font-sf-pro: "SF Pro", sans-serif;
+  --font-inter: "Inter", sans-serif;
+
+  /* FONT SIZE */
+  --text-num-12: 12px;
+  --text-num-13: 13px;
+
+  /* LINE HEIGHT */
+  --leading-num-18: 18px;
+  --leading-num-20: 20px;
 }
 
 /* =========================================
-   GLOBAL RESET
+   GLOBAL SETTINGS
 ========================================= */
 
 * {
@@ -31,48 +55,54 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 100px;
 }
 
 body {
   margin: 0;
+  padding: 0;
+  width: 100%;
   min-height: 100vh;
-  font-family: var(--font-inter);
-  color: #ffffff;
-  background-color: #ffffff;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-button,
-input,
-textarea,
-select {
-  font: inherit;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
+  font-family: "SF Pro", sans-serif;
+  background: #ffffff;
+  color: #e8ecff;
 }
 
 img {
   max-width: 100%;
 }
 
-button,
-a {
-  -webkit-tap-highlight-color: transparent;
+/* =========================================
+   HERO SECTION
+========================================= */
+
+.hero-section {
+  position: relative;
+  width: 100%;
+  min-height: 906px;
+}
+
+.hero-content {
+  position: relative;
+  width: 100%;
+  min-height: 906px;
+  max-width: 1440px;
+  margin-inline: auto;
 }
 
 /* =========================================
-   REUSABLE ANIMATIONS
+   HERO TITLE WORD ANIMATION
 ========================================= */
 
-@keyframes fade-up {
+.hero-word {
+  opacity: 0;
+  transform: translateY(110%);
+  animation: wordReveal 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes wordReveal {
   from {
     opacity: 0;
-    transform: translateY(24px);
+    transform: translateY(110%);
   }
 
   to {
@@ -81,17 +111,195 @@ a {
   }
 }
 
-.animate-fade-up {
-  animation: fade-up 0.8s ease-out both;
+/* =========================================
+   HERO DESCRIPTION ANIMATION
+========================================= */
+
+.hero-description {
+  opacity: 0;
+  animation: fadeUp 1s ease forwards;
+  animation-delay: 1.5s;
 }
 
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================================
+   HERO IMAGE ANIMATION
+========================================= */
+
+.hero-image {
+  opacity: 0;
+  animation: imageReveal 1.2s ease forwards;
+  animation-delay: 1s;
+}
+
+@keyframes imageReveal {
+  from {
+    opacity: 0;
+    transform: translateX(70px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* =========================================
+   OUR SERVICE SECTION
+========================================= */
+
+.service-section {
+  position: relative;
+  overflow: hidden;
+}
+
+/* =========================================
+   SERVICE CARD ANIMATION
+========================================= */
+
+.service-card {
+  opacity: 0;
+  transform: translateY(35px);
+  animation: serviceReveal 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes serviceReveal {
+  from {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================================
+   CUSTOMER REVIEW SECTION
+========================================= */
+
+.customer-review-section {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: linear-gradient(
+    116.57deg,
+    #0a205f,
+    #164b9c
+  );
+}
+
+/* =========================================
+   CUSTOMER REVIEW CARD
+========================================= */
+
+.customer-review-card {
+  border-radius: 20px;
+  padding: 28px;
+}
+
+/* =========================================
+   TABLET RESPONSIVE
+========================================= */
+
+@media (max-width: 1199px) {
+  .hero-section {
+    min-height: auto;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    min-height: auto;
+    padding: 130px 40px 70px;
+  }
+
+  .hero-title {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero-title h1 {
+    font-size: clamp(36px, 5.5vw, 54px);
+    line-height: 1.2;
+  }
+
+  .hero-description {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    max-width: 700px;
+  }
+
+  .hero-image {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    width: min(100%, 439px);
+    margin-inline: auto;
+  }
+
+  .hero-image img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+  }
+}
+
+/* =========================================
+   MOBILE RESPONSIVE
+========================================= */
+
+@media (max-width: 640px) {
+  .hero-content {
+    padding: 110px 24px 50px;
+    gap: 24px;
+  }
+
+  .hero-title h1 {
+    font-size: clamp(32px, 9vw, 42px);
+    line-height: 1.2;
+  }
+
+  .hero-description p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .hero-image {
+    width: 100%;
+  }
+}
+
+/* =========================================
+   ACCESSIBILITY
+========================================= */
+
 @media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    scroll-behavior: auto !important;
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
+  .hero-word,
+  .hero-description,
+  .hero-image,
+  .service-card {
+    animation: none;
+    opacity: 1;
+    transform: none;
   }
 }

@@ -1,374 +1,110 @@
+
 import Image from "next/image";
 
-const HomeService = () => {
+const services = [
+  {
+    category: "ACCOUNTING",
+    title: "Accounting and Bookkeeping",
+    description:
+      "We help businesses manage financial records, transactions, and accurate financial reports.",
+    image: "/images/accounting.jpg",
+    alt: "Accounting and bookkeeping services",
+  },
+  {
+    category: "TAX SERVICES",
+    title: "Tax Planning and Reporting",
+    description:
+      "We assist with tax planning, calculation, administration, and reporting.",
+    image: "/images/tax.jpg",
+    alt: "Tax planning and reporting services",
+  },
+  {
+    category: "BUSINESS ADVISORY",
+    title: "Business Consulting and Audit Support",
+    description:
+      "We help businesses improve performance, make informed decisions, and overcome challenges.",
+    image: "/images/consulting.jpg",
+    alt: "Business consulting services",
+  },
+];
+
+export default function OurServiceDesktop() {
   return (
     <section
-      className="
-        w-full
-        bg-white
-        shadow-[inset_0_0.25rem_0.375rem_0.25rem_rgba(0,0,0,0.25)]
-        overflow-hidden
-
-        text-black
-        font-inter
-
-        py-10
-        sm:py-12
-        md:py-14
-        lg:py-16
-
-        px-4
-        sm:px-6
-        md:px-8
-        lg:px-12
-      "
+      id="services"
+      className="service-section w-full bg-aliceblue px-6 py-12 text-steelblue sm:px-10 lg:px-16"
     >
-      {/* JUDUL */}
-      <h2
-        className="
-          mb-16
-          sm:mb-18
-          md:mb-20
-          lg:mb-22
+      <div className="mx-auto flex w-full max-w-[1440px] flex-col gap-7">
 
-          text-[2.25rem]
-          sm:text-[2.5rem]
-          md:text-[2.75rem]
-          lg:text-[3rem]
+        {/* SECTION HEADING */}
+        <div className="flex flex-col items-start gap-3">
+          <p className="text-xs font-semibold tracking-[2px] leading-[18px]">
+            WHAT WE DO
+          </p>
 
-          font-bold
-          leading-[1.1]
-          text-center
+          <h2 className="text-4xl font-semibold leading-tight tracking-[-1.5px] text-midnightblue sm:text-5xl">
+            Our Service
+          </h2>
 
-          [text-shadow:0_0.25rem_0.25rem_rgba(0,0,0,0.25)]
-        "
-      >
-        Our Service
-      </h2>
-
-      <div
-      className="
-      mx-auto
-      w-full
-      max-w-317.5
-
-      mt-8
-      sm:mt-10
-      md:mt-12
-      lg:mt-14
-
-      grid
-      grid-cols-1
-      md:grid-cols-2
-      lg:grid-cols-3
-
-      justify-items-center
-      "
-      />
-
-      {/* CARDS */}
-      <div
-        className="
-          mx-auto
-          w-full
-          max-w-317.5
-
-          grid
-          grid-cols-1
-          md:grid-cols-2
-          lg:grid-cols-3
-
-          gap-8
-
-          justify-items-center
-        "
-      >
-        {/* ACCOUNTING */}
-        <div
-          className="
-            w-full
-            max-w-67.5
-            min-h-95
-
-            rounded-[0.9375rem]
-            bg-darkslateblue
-
-            shadow-[0_0.25rem_0.25rem_rgba(0,0,0,0.25)]
-
-            overflow-hidden
-
-            flex
-            flex-col
-          "
-        >
-          {/* PUTIH */}
-          <div
-            className="
-              flex-1
-              bg-white/70
-
-              rounded-[0.9375rem]
-              overflow-hidden
-
-              flex
-              flex-col
-            "
-          >
-            {/* Gambar */}
-            <Image
-              src="/service 1.avif"
-              alt="Accounting and Bookkeeping"
-              width={270}
-              height={160}
-              className="
-                w-full
-                h-40
-                object-cover
-                shrink-0
-              "
-            />
-
-            {/* Content */}
-            <div
-              className="
-                flex
-                flex-col
-                items-center
-                gap-3
-
-                px-4
-                pt-3.5
-                pb-4.5
-              "
-            >
-              {/* Judul */}
-              <h3
-                className="
-                  text-[1rem]
-                  font-semibold
-                  leading-[1.2]
-
-                  text-center
-                  text-black
-                "
-              >
-                Accounting and Bookkeeping
-              </h3>
-
-              {/* Deskripsi */}
-              <p
-                className="
-                  text-[0.8125rem]
-                  font-semibold
-                  leading-normal
-
-                  text-center
-                  text-black
-                "
-              >
-                We provide professional accounting and bookkeeping services to
-                help businesses manage financial records, monitor transactions,
-                and prepare accurate financial reports.
-              </p>
-            </div>
-          </div>
-
-          {/* BIRU BAWAH */}
-          <div className="h-6 shrink-0 bg-darkslateblue" />
+          <p className="text-base leading-7 text-slategray sm:text-lg">
+            Practical expertise. A stronger foundation for your business.
+          </p>
         </div>
 
-        {/* TAX */}
-        <div
-          className="
-            w-full
-            max-w-67.5
-            min-h-95
-
-            rounded-[0.9375rem]
-            bg-darkslateblue
-
-            shadow-[0_0.25rem_0.25rem_rgba(0,0,0,0.25)]
-
-            overflow-hidden
-
-            flex
-            flex-col
-          "
-        >
-          {/* PUTIH */}
-          <div
-            className="
-              flex-1
-              bg-white/70
-
-              rounded-[0.9375rem]
-              overflow-hidden
-
-              flex
-              flex-col
-            "
-          >
-            {/* Gambar */}
-            <Image
-              src="/service 2.avif"
-              alt="Tax Planning and Reporting"
-              width={270}
-              height={153}
-              className="
-                w-full
-                h-38.25
-                object-cover
-                shrink-0
-              "
-            />
-
-            {/* Content */}
-            <div
-              className="
-                flex
-                flex-col
-                items-center
-                gap-3
-
-                px-4
-                pt-3.5
-                pb-4.5
-              "
+        {/* SERVICE CARDS */}
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {services.map((service, index) => (
+            <article
+              key={service.category}
+              className="service-card flex min-w-0 flex-col overflow-hidden rounded-[20px] bg-white"
+              style={{
+                animationDelay: `${index * 0.2}s`,
+              }}
             >
-              {/* Judul */}
-              <h3
-                className="
-                  text-[1rem]
-                  font-semibold
-                  leading-[1.2]
+              {/* IMAGE */}
+              <div className="relative h-[180px] w-full overflow-hidden">
+                <Image
+                  src={service.image}
+                  alt={service.alt}
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  className="object-cover transition-transform duration-500 hover:scale-105"
+                />
+              </div>
 
-                  text-center
-                  text-black
-                "
-              >
-                Tax Planning and Reporting
-              </h3>
+              {/* CONTENT */}
+              <div className="flex flex-1 flex-col items-start gap-3 p-6">
+                <p className="text-[11px] font-semibold leading-[18px] tracking-[1.2px] text-steelblue">
+                  {service.category}
+                </p>
 
-              {/* Deskripsi */}
-              <p
-                className="
-                  text-[0.8125rem]
-                  font-semibold
-                  leading-normal
+                <h3 className="min-h-[56px] text-[22px] font-semibold leading-7 text-midnightblue">
+                  {service.title}
+                </h3>
 
-                  text-center
-                  text-black
-                "
-              >
-                We assist businesses with tax planning, calculation,
-                administration, and reporting to help ensure that tax
-                obligations are managed properly and efficiently.
-              </p>
-            </div>
-          </div>
-
-          {/* BIRU BAWAH */}
-          <div className="h-6 shrink-0 bg-darkslateblue" />
+                <p className="min-h-[72px] text-base leading-6 text-slategray">
+                  {service.description}
+                </p>
+              </div>
+            </article>
+          ))}
         </div>
 
-        {/* BUSINESS CONSULTING */}
-        <div
-          className="
-            w-full
-            max-w-67.5
-            min-h-95
+        {/* FOOTER */}
+        <div className="flex flex-col items-start justify-between gap-5 pt-2 sm:flex-row sm:items-center">
+          <p className="text-sm font-medium leading-[22px] text-slategray">
+            Accounting. Tax. Business advisory.
+          </p>
 
-            rounded-[0.9375rem]
-            bg-darkslateblue
-
-            shadow-[0_0.25rem_0.25rem_rgba(0,0,0,0.25)]
-
-            overflow-hidden
-
-            flex
-            flex-col
-          "
-        >
-          {/* PUTIH */}
-          <div
-            className="
-              flex-1
-              bg-white/70
-
-              rounded-[0.9375rem]
-              overflow-hidden
-
-              flex
-              flex-col
-            "
+          <a
+            href="/services"
+            className="inline-flex items-center justify-center rounded-xl bg-midnightblue px-7 py-3 text-sm font-semibold text-white shadow-[0px_4px_4px_rgba(0,0,0,0.25)] transition-all duration-300 hover:-translate-y-1 hover:bg-steelblue"
           >
-            {/* Gambar */}
-            <Image
-              src="/service 3.avif"
-              alt="Business Consulting and Audit Support"
-              width={270}
-              height={153}
-              className="
-                w-full
-                h-38.25
-                object-cover
-                shrink-0
-              "
-            />
-
-            {/* Content */}
-            <div
-              className="
-                flex
-                flex-col
-                items-center
-                gap-3
-
-                px-4
-                pt-3.5
-                pb-4.5
-              "
-            >
-              {/* Judul */}
-              <h3
-                className="
-                  text-[1rem]
-                  font-semibold
-                  leading-[1.2]
-
-                  text-center
-                  text-black
-                "
-              >
-                Business Consulting and
-                <br />
-                Audit Support
-              </h3>
-
-              {/* Deskripsi */}
-              <p
-                className="
-                  text-[0.8125rem]
-                  font-semibold
-                  leading-normal
-
-                  text-center
-                  text-black
-                "
-              >
-                We provide professional business consultation and audit
-                support to help companies improve performance, make informed
-                decisions, and overcome business challenges.
-              </p>
-            </div>
-          </div>
-
-          {/* BIRU BAWAH */}
-          <div className="h-6 shrink-0 bg-darkslateblue" />
+            Read more
+          </a>
         </div>
+
       </div>
     </section>
   );
-};
-
-export default HomeService;
+}
