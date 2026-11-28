@@ -7,7 +7,7 @@ const services = [
     title: "Accounting and Bookkeeping",
     description:
       "We help businesses manage financial records, transactions, and accurate financial reports.",
-    image: "/images/accounting.jpg",
+    image: "/service 1.png",
     alt: "Accounting and bookkeeping services",
   },
   {
@@ -15,7 +15,7 @@ const services = [
     title: "Tax Planning and Reporting",
     description:
       "We assist with tax planning, calculation, administration, and reporting.",
-    image: "/images/tax.jpg",
+    image: "/service 2.png",
     alt: "Tax planning and reporting services",
   },
   {
@@ -23,7 +23,7 @@ const services = [
     title: "Business Consulting and Audit Support",
     description:
       "We help businesses improve performance, make informed decisions, and overcome challenges.",
-    image: "/images/consulting.jpg",
+    image: "/service 3.png",
     alt: "Business consulting services",
   },
 ];
